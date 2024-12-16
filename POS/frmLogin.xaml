@@ -1,0 +1,111 @@
+﻿<Window x:Class="POS.frmLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS"
+        mc:Ignorable="d"
+                Title="Login" WindowState="Maximized" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <!-- Style for the TextBox -->
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="BorderBrush" Value="#0078D7" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+
+        <!-- Style for the PasswordBox -->
+        <Style TargetType="PasswordBox">
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="BorderBrush" Value="#0078D7" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+
+        <!-- Style for the Button -->
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0,10,0,0" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#0078D7" />
+            <Setter Property="BorderBrush" Value="#0078D7" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#005A9E" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#003F7D" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Background Panel -->
+        <Border Background="#E5E5E5" CornerRadius="15" Padding="20" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock Text="Login" FontSize="30" FontWeight="Bold" Foreground="#0078D7" Margin="0,0,0,20" HorizontalAlignment="Center" />
+
+                <!-- Username -->
+                <Border Background="White" CornerRadius="5" Padding="5" Margin="0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="pack://application:,,,/Images/user_icon.png" Width="20" Height="20" VerticalAlignment="Center" Margin="5,0,5,0" />
+                        <TextBox x:Name="UsernameTextBox" Grid.Column="1" PlaceholderText="Username" />
+                    </Grid>
+                </Border>
+
+                <!-- Password -->
+                <Border Background="White" CornerRadius="5" Padding="5" Margin="0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="pack://application:,,,/Images/password_icon.png" Width="20" Height="20" VerticalAlignment="Center" Margin="5,0,5,0" />
+                        <PasswordBox x:Name="PasswordBox" Grid.Column="1" />
+                    </Grid>
+                </Border>
+
+                <!-- Login Button -->
+                <Button Content="Login" Width="150" HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Background="#0078D7" Height="40">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Source="pack://application:,,,/Images/login_icon.png" Width="20" Height="20" VerticalAlignment="Center" Margin="10,0,5,0" />
+                                <TextBlock Text="Login" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

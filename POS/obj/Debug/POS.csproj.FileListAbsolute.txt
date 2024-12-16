@@ -1,0 +1,15 @@
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\App.g.cs
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS_MarkupCompile.cache
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\frmLogin.g.cs
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS_MarkupCompile.lref
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\bin\Debug\POS.exe.config
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\bin\Debug\POS.exe
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\bin\Debug\POS.pdb
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\frmLogin.baml
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.g.resources
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.exe
+C:\Users\ratan\Desktop\WindowForm\POS\POS\POS\obj\Debug\POS.pdb
